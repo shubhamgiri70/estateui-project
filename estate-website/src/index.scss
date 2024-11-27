@@ -1,0 +1,91 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.15; /* Improve readability */
+  -webkit-text-size-adjust: 100%; /* Prevent adjustments of font size */
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif; /* Default font */
+  -webkit-font-smoothing: antialiased; /* Smooth fonts on macOS */
+  text-rendering: optimizeSpeed; /* Improve rendering */
+}
+
+main {
+  display: block; /* Ensure main behaves correctly */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+figure,
+figcaption {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit; /* Ensure input elements inherit font styles */
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* Set default monospace font */
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: auto; /* Provide focus outline for accessibility */
+}
+
+// custom style
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow: hidden;
+}
