@@ -1,0 +1,126 @@
+.singlepage {
+  display: flex;
+  height: 100%;
+
+  .details {
+    flex: 3;
+
+    .wrapper {
+      padding-right: 50px;
+
+      .info {
+        margin-top: 50px;
+
+        .top {
+          display: flex;
+          justify-content: space-between;
+
+          .post {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h1 {
+              font-weight: 400;
+            }
+            .address {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              color: #888;
+              font-size: 14px;
+
+              img {
+                width: 16px;
+                height: 16px;
+              }
+            }
+
+            .price {
+              padding: 4px;
+              background-color: #fecd51a3;
+              border-radius: 5px;
+              width: max-content;
+              font-size: 18px;
+              font-weight: 300;
+            }
+          }
+
+          .user {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+            padding: 0 50px;
+            border-radius: 10px;
+            background-color: #fae5afa3;
+            font-weight: 600;
+
+            img {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+        }
+        .bottom {
+          margin-top: 50px;
+          color: #555;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  .features {
+    flex: 2;
+    background-color: #fcf5f3;
+
+    .wrapper {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+
+      .title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .features {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          background-color: #fcf2dce8;
+        }
+
+        .featureText {
+          span {
+            font-weight: bold;
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .listVertical {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
