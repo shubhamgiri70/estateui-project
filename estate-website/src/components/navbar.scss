@@ -45,10 +45,6 @@ nav {
     align-items: center;
     gap: 15px;
 
-    @include md {
-      background-color: transparent;
-    }
-
     a {
       font-size: 14px;
       padding: 8px 15px;
@@ -75,36 +71,38 @@ nav {
         height: 40px;
         border-radius: 50%;
         object-fit: cover;
-        margin-right: 20px;
+        margin-right: 10px;
       }
 
       span {
         font-size: 16px;
         margin-right: 12px;
-      }
 
-      span {
         @include sm {
           display: none;
         }
       }
 
       .profile {
-        padding: 12px 24px;
+        padding: 8px 15px;
         background-color: #fece51;
-        cursor: pointer;
-        border: none;
+        border-radius: 5px;
         position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
 
         .notification {
           position: absolute;
-          top: -8px;
-          right: -8px;
+          top: -5px;
+          right: -5px;
           background-color: red;
           color: white;
+          font-size: 12px;
           border-radius: 50%;
-          width: 26px;
-          height: 26px;
+          width: 20px;
+          height: 20px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -118,10 +116,14 @@ nav {
 
     .menuIcon {
       display: none;
-
+      z-index: 999;
       img {
         width: 30px;
         cursor: pointer;
+      }
+
+      @include sm {
+        display: block;
       }
     }
 
@@ -146,19 +148,31 @@ nav {
       a {
         margin: 10px 0;
         font-size: 18px;
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      @include sm {
+        a {
+          display: block;
+        }
       }
     }
   }
 
-  // @include sm {
-  //   .right {
-  //     .menuIcon {
-  //       display: block;
-  //     }
+  @include sm {
+    .right {
+      .menuIcon {
+        display: block;
+      }
 
-  //     a {
-  //       display: none;
-  //     }
-  //   }
-  // }
+      a {
+        display: none;
+      }
+    }
+  }
 }
