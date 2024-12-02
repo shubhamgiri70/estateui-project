@@ -1,3 +1,5 @@
+import "./map.scss";
+import "leaflet/dist/leaflet.css";
 import Slider from "./Slider";
 import "./singlepage.scss";
 import { singlePostData, userData } from "../library/dummydata";
@@ -54,7 +56,8 @@ const Singlepage = () => {
               </div>
             </div>
           </div>
-          <p className="title">
+          <p className="title">Sizes</p>
+          <div className="sizes">
             <div className="size">
               <img src="./images/size.png" alt="" />
               <span>90sqft</span>
@@ -67,9 +70,9 @@ const Singlepage = () => {
               <img src="./images/bath.png" alt="" />
               <span>1 Bathroom</span>
             </div>
-          </p>
-          <div className="sizes"></div>
-          <p className="title">
+          </div>
+          <p className="title">Near by Places</p>
+          <div className="listHorizontal">
             <div className="features">
               <img src="./images/school.png" alt="" />
               <div className="featureText">
@@ -91,8 +94,7 @@ const Singlepage = () => {
                 <p>200m away</p>
               </div>
             </div>
-          </p>
-          <div className="listHorizontal"></div>
+          </div>
           <p className="title">Location</p>
           <div className="mapContainer">
             <Map items={[singlePostData]} />
