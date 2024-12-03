@@ -68,7 +68,7 @@ const listData = [
     id: 6,
     title: "Charming Apartment in Karol Bagh",
     images: [
-      "https://images.pexels.com/photos/707977/pexels-photo-707977.jpeg",
+      "https://images.pexels.com/photos/259600/pexels-photo-259600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     ],
     bedroom: 2,
     bathroom: 1,
@@ -137,7 +137,7 @@ export const singlePostData = {
   price: 75000, // Price in INR
   images: [
     "https://images.pexels.com/photos/3182766/pexels-photo-3182766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/2061728/pexels-photo-2061728.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://images.pexels.com/photos/259701/pexels-photo-259701.jpeg",
     "https://images.pexels.com/photos/259600/pexels-photo-259600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     "https://images.pexels.com/photos/3992362/pexels-photo-3992362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   ],

@@ -32,7 +32,7 @@ const Homepage = () => {
         </div>
       </div>
       <div className="imgContainer">
-        <img src="./public/images/bg.png" alt="" />
+        <img src="./images/bg.png" alt="" />
       </div>
     </div>
   );

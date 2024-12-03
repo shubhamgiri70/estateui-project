@@ -5,23 +5,25 @@ import "./navbar.scss";
 const Navbar = ({ isHomePage }) => {
   const [open, setOpen] = useState(false);
 
-  const user = true; // Simulating user state
+  const user = true;
 
   return (
     <nav>
       <div className="left">
         <Link to="/" className="logo">
-          <img src="./public/images/logo.png" alt="Logo" />
+          <img src="./images/logo.png" alt="Logo" />
           <span>GiriEstate</span>
         </Link>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
         <Link to="/agents">Agents</Link>
+        <Link to="/list" className="properties-list">
+          Properties List
+        </Link>
       </div>
       <div className="right">
         {isHomePage ? (
-          // Show Login and Signup buttons on the Home page
           <>
             <Link to="/login">Login</Link>
             <Link to="/signup" className="register">
@@ -29,7 +31,6 @@ const Navbar = ({ isHomePage }) => {
             </Link>
           </>
         ) : (
-          // Show User Profile on other pages
           user && (
             <div className="user">
               <img
